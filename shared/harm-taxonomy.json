@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "deepfake",
+      "en": "Fake image or video",
+      "ha": "Hoton karya ko bidiyo",
+      "yo": "Aworan tabi fidio eke",
+      "ig": "Onyonyo ma ọ bụ vidiyo nzu",
+      "sw": "Picha au video ya uongo",
+      "am": "ሐሰተኛ ምስል ወይም ቪዲዮ",
+      "so": "Sawir ama muuqaal been ah",
+      "zu": "Isithombe noma ividiyo yokukhohlisa",
+      "pcm": "Fake picture or video"
+    },
+    {
+      "id": "misinformation",
+      "en": "False information",
+      "ha": "Labari karya",
+      "yo": "Alaye eke",
+      "ig": "Ozi nzu",
+      "sw": "Habari za uongo",
+      "am": "ሐሰተኛ መረጃ",
+      "so": "Macluumaad been ah",
+      "zu": "Ulwazi olungamanga",
+      "pcm": "False information"
+    },
+    {
+      "id": "discrimination",
+      "en": "Unfair treatment by AI",
+      "ha": "Wariyar AI",
+      "yo": "Itọju aiṣododo nipasẹ AI",
+      "ig": "Ọ dịghị mma ọchịchọ site na AI",
+      "sw": "Upendeleo mbaya wa AI",
+      "am": "ፍትሃዊ ያልሆነ የ AI አያያዝ",
+      "so": "Takoorid AI",
+      "zu": "Ukuphathwa okungafanele i-AI",
+      "pcm": "AI treat you bad"
+    },
+    {
+      "id": "harassment",
+      "en": "Harassment or intimidation",
+      "ha": "Cin zarafin mutum ko tsoratarwa",
+      "yo": "Ìdọwọ tabi ìbẹrù",
+      "ig": "Ihe ize ndụ ma ọ bụ ntegbu",
+      "sw": "Unyanyasaji au vitisho",
+      "am": "ትንኮሳ ወይም ማስፈራሪያ",
+      "so": "Xoog ama cabsi",
+      "zu": "Ukuhlukunyezwa noma ukusabisa",
+      "pcm": "Harass or threaten person"
+    },
+    {
+      "id": "financial_harm",
+      "en": "Financial harm",
+      "ha": "Asarar kudi",
+      "yo": "Ìpalara owó",
+      "ig": "Mfu ego",
+      "sw": "Madhara ya kifedha",
+      "am": "የፋይናንስ ጉዳት",
+      "so": "Dhibaatada dhaqaale",
+      "zu": "Umonakalo wezikhwama",
+      "pcm": "Money wahala from AI"
+    },
+    {
+      "id": "health_misinfo",
+      "en": "Health misinformation",
+      "ha": "Karya game da lafiya",
+      "yo": "Àlàyé ìlera eke",
+      "ig": "Ozi nzu banyere ahụ ike",
+      "sw": "Taarifa za afya za uongo",
+      "am": "የጤና ሐሰት መረጃ",
+      "so": "Macluumaadka caafimaadka been ah",
+      "zu": "Ulwazi lwezempilo olungamanga",
+      "pcm": "Wrong health information from AI"
+    },
+    {
+      "id": "privacy_violation",
+      "en": "Privacy violation",
+      "ha": "Take kan sirri",
+      "yo": "Ìrẹjẹ àṣírí",
+      "ig": "Mbibi nzuzo",
+      "sw": "Ukiukwaji wa faragha",
+      "am": "የግለ-ሕይወት ጥሰት",
+      "so": "Xadgudubka arrimaha gaar ah",
+      "zu": "Ukwephula ubumfihlo",
+      "pcm": "AI expose your private matter"
+    },
+    {
+      "id": "other",
+      "en": "Other harm",
+      "ha": "Wani lahani",
+      "yo": "Ìpalara míìràn",
+      "ig": "Ihe ize ndụ ọzọ",
+      "sw": "Madhara mengine",
+      "am": "ሌላ ጉዳት",
+      "so": "Waxyeelo kale",
+      "zu": "Umonakalo okunye",
+      "pcm": "Another kind of harm"
+    }
+  ],
+  "severityLevels": ["low", "medium", "high", "critical"],
+  "disclosureLevels": ["private", "anon_research", "verified_partner"],
+  "supportedLanguages": ["en", "ha", "yo", "ig", "sw", "am", "so", "zu", "pcm"]
+}

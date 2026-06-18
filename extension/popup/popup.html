@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmiSafe</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="../icons/icon32.png" alt="AmiSafe" />
+      <span>AmiSafe</span>
+    </div>
+    <select id="langSelect" class="lang-select" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="ha">Hausa</option>
+      <option value="yo">Yorùbá</option>
+      <option value="ig">Igbo</option>
+      <option value="sw">Kiswahili</option>
+      <option value="am">አማርኛ</option>
+      <option value="so">Soomaali</option>
+      <option value="zu">isiZulu</option>
+      <option value="pcm">Pidgin</option>
+    </select>
+  </header>
+
+  <!-- Step 1: Capture -->
+  <section id="stepCapture" class="step active">
+    <h2 class="step-title" data-i18n="step1Title">What did you see?</h2>
+    <p class="step-desc" data-i18n="step1Desc">Take a screenshot of the harmful AI content on this page.</p>
+
+    <button id="btnScreenshot" class="btn btn-primary" data-i18n="btnScreenshot">
+      📷 Capture Screenshot
+    </button>
+
+    <div id="screenshotPreview" class="preview hidden">
+      <img id="previewImg" alt="Screenshot preview" />
+      <span class="preview-label" data-i18n="previewLabel">Screenshot captured ✓</span>
+    </div>
+
+    <div class="divider" data-i18n="orLabel">or describe in your own words</div>
+
+    <!-- Voice note -->
+    <div class="voice-section">
+      <button id="btnRecord" class="btn btn-secondary" data-i18n="btnRecord">🎙 Record Voice Note</button>
+      <button id="btnStopRecord" class="btn btn-danger hidden" data-i18n="btnStop">⏹ Stop Recording</button>
+      <div id="voiceStatus" class="voice-status hidden"></div>
+    </div>
+
+    <!-- Text input -->
+    <textarea
+      id="textInput"
+      class="text-input"
+      rows="3"
+      data-i18n-placeholder="textPlaceholder"
+      placeholder="Describe what happened..."
+    ></textarea>
+
+    <button id="btnNextToCategory" class="btn btn-primary btn-full" data-i18n="btnNext" disabled>
+      Next →
+    </button>
+  </section>
+
+  <!-- Step 2: Category -->
+  <section id="stepCategory" class="step hidden">
+    <h2 class="step-title" data-i18n="step2Title">What kind of harm is this?</h2>
+    <div id="categoryGrid" class="category-grid">
+      <!-- Dynamically populated from harm-taxonomy.json -->
+    </div>
+    <button id="btnNextToPrivacy" class="btn btn-primary btn-full" data-i18n="btnNext" disabled>
+      Next →
+    </button>
+    <button id="btnBackToCapture" class="btn btn-ghost" data-i18n="btnBack">← Back</button>
+  </section>
+
+  <!-- Step 3: Disclosure / Privacy -->
+  <section id="stepPrivacy" class="step hidden">
+    <h2 class="step-title" data-i18n="step3Title">Who can see your report?</h2>
+    <p class="step-desc" data-i18n="step3Desc">Your report is encrypted on your device. You choose what happens next.</p>
+
+    <div class="disclosure-options">
+      <label class="disclosure-card" data-level="private">
+        <input type="radio" name="disclosure" value="private" />
+        <div class="card-content">
+          <span class="card-icon">🔒</span>
+          <strong data-i18n="discPrivateTitle">Keep private</strong>
+          <p data-i18n="discPrivateDesc">Stays on your device only. Never sent anywhere.</p>
+        </div>
+      </label>
+
+      <label class="disclosure-card" data-level="anon_research">
+        <input type="radio" name="disclosure" value="anon_research" />
+        <div class="card-content">
+          <span class="card-icon">🔬</span>
+          <strong data-i18n="discAnonTitle">Anonymised research</strong>
+          <p data-i18n="discAnonDesc">Sent without any personal identifiers. Helps researchers detect patterns.</p>
+        </div>
+      </label>
+
+      <label class="disclosure-card" data-level="verified_partner">
+        <input type="radio" name="disclosure" value="verified_partner" />
+        <div class="card-content">
+          <span class="card-icon">🤝</span>
+          <strong data-i18n="discPartnerTitle">Verified partner</strong>
+          <p data-i18n="discPartnerDesc">Shared with a vetted civil society organisation who may follow up.</p>
+        </div>
+      </label>
+    </div>
+
+    <button id="btnSubmit" class="btn btn-primary btn-full" data-i18n="btnSubmit" disabled>
+      Submit Report
+    </button>
+    <button id="btnBackToCategory" class="btn btn-ghost" data-i18n="btnBack">← Back</button>
+  </section>
+
+  <!-- Step 4: Confirmation -->
+  <section id="stepConfirm" class="step hidden">
+    <div class="confirm-icon">✅</div>
+    <h2 class="step-title" data-i18n="confirmTitle">Report submitted</h2>
+    <p class="step-desc" data-i18n="confirmDesc">
+      Thank you. Your report has been securely received. Your identity remains private.
+    </p>
+    <div id="reportId" class="report-id"></div>
+    <button id="btnNewReport" class="btn btn-primary btn-full" data-i18n="btnNewReport">
+      Report another
+    </button>
+  </section>
+
+  <!-- Privacy notice (always visible footer) -->
+  <footer class="privacy-footer">
+    <span data-i18n="privacyNotice">🔒 No account required. No personal data stored.</span>
+  </footer>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

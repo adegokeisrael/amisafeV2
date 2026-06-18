@@ -1,0 +1,25 @@
+{
+  "name": "amisafe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community-led AI harm reporting platform for Africa",
+  "workspaces": ["extension", "api", "bot", "dashboard", "shared"],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:api": "npm run dev --workspace=api",
+    "dev:dashboard": "npm run dev --workspace=dashboard",
+    "dev:bot": "npm run dev --workspace=bot",
+    "db:migrate": "npm run migrate --workspace=api",
+    "db:seed": "npm run seed --workspace=api",
+    "lint": "eslint '**/*.{js,jsx}' --ignore-path .eslintignore",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "license": "Apache-2.0",
+  "author": "AmiSafe Contributors"
+}
