@@ -143,6 +143,38 @@ The extension guides any user through a 4-step reporting flow directly in their 
 
 <br/>
 
+#### 📥 Don't want to build from source? Download the packaged extension
+
+**[⬇ Download `amisafe-v2.rar`](media/amisafe-v2.rar)**
+
+**Install on Chrome:**
+
+```
+1. Download and extract amisafe-v2.rar
+   (Windows → WinRAR / 7-Zip · macOS → The Unarchiver · Linux → unrar x amisafe-v2.rar)
+
+2. Open chrome://extensions in your address bar
+
+3. Toggle on Developer mode          (top-right corner)
+
+4. Click Load unpacked → select the extracted amisafe-v2 folder
+
+5. Pin AmiSafe to your toolbar       (puzzle-piece icon → pin)
+```
+
+**Use it:**
+
+```
+1. Browse to the content you want to report (image, post, video, chatbot reply)
+2. Click the AmiSafe icon in your toolbar
+3. Step 1 → Capture screenshot, voice note, or text evidence
+4. Step 2 → Select harm category and language
+5. Step 3 → Choose a disclosure level (Private · Anon research · Verified partner)
+6. Step 4 → Review and submit — done in under 3 minutes
+```
+
+<br/>
+
 ---
 
 ## 🔒 Privacy Architecture
