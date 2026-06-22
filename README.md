@@ -34,7 +34,7 @@ AI-generated harms — deepfakes, political misinformation in local languages, d
 
 AmiSafe fills that gap. It is a privacy-first, multilingual reporting system that lets any internet user capture evidence of AI harm and submit it safely — via a **browser extension** or a **WhatsApp bot** — feeding a structured intelligence database that researchers, civil society, and regulators can act on.
 
-> *"A woman in Lagos who receives a deepfake of herself can submit an evidenced, anonymised report in Yoruba in under 3 minutes — rather than watching it disappear on WhatsApp."*
+> *"A woman in Lagos who receives a deepfake of herself can submit an evidenced, anonymised report in Yoruba in under minutes — rather than watching it disappear on WhatsApp."*
 
 <br/>
 
