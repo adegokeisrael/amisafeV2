@@ -232,7 +232,7 @@ See [`shared/harm-taxonomy.json`](shared/harm-taxonomy.json) for all translation
 | ❓ | `other` | Other harm | ✅ | ✅ | ✅ | ✅ |
 
 **All 9 supported languages:**  
-Hausa · Yorùbá · Igbo · Kiswahili · አማርኛ · Soomaali · isiZulu · Nigerian Pidgin · English
+Hausa · Yorùbá · Igbo · Kiswahili · አማርኛ · Oromo · isiZulu · Nigerian Pidgin · English
 
 <br/>
 
