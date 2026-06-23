@@ -138,7 +138,7 @@ The extension guides any user through a 4-step reporting flow directly in their 
 <div align="center">
   <img src="media/amisafe_extension_demo.gif" alt="AmiSafe browser extension demo — 4-step harm report capture" width="720"/>
   <br/>
-  <sub><i>Capturing and submitting a deepfake report in Yoruba · AmiSafe Browser Extension</i></sub>
+  <sub><i>Capturing and submitting a deepfake report · AmiSafe Browser Extension</i></sub>
 </div>
 
 <br/>
